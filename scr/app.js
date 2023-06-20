@@ -4,7 +4,9 @@ const { code } = require("telegraf/format");
 const { oggToMp3, streamToText } = require("./convertVoice");
 const { removeStreams } = require("./helpers");
 const { bot, INITIAL_SESSION } = require("./models");
-
+const express = require('express');
+//express
+const app = express();
 // the bot processes voice requests
 bot.on(message("voice"), async (context) => {
   // if session is null or undefined set up initial variable
@@ -75,3 +77,12 @@ process.once("SIGTERM", () => {
   bot.stop("SIGTERM");
   console.log("Bot was stopped!");
 });
+
+app.get('/', async (req, res) => {
+res.send('online')
+});
+
+
+const porta = process.env.PORT || 5000;
+//iniciando...
+app.listen(porta, () => console.log("site Online na porta:", porta));
