@@ -25,7 +25,7 @@ bot.on(message("voice"), async (context) => {
     const mp3Path = await oggToMp3.convertToMp3(oggPath, userId); // convert .ogg to .mp3
 
     const text = await streamToText.transcription(mp3Path); // convert stream to text
-    await context.reply(`oque entendi no áudio que você mandou: ${text}`);
+    await context.reply(`Your request: ${text}`);
     await context.reply(code("Mensagem sendo processada..."));
 
     const { messages } = context.session;

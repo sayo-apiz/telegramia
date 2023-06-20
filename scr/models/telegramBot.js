@@ -15,14 +15,14 @@ bot.use(session()); // set sessions in our bot to be able to ask many questions 
 bot.command("start", async (context) => {
   context.session = INITIAL_SESSION;
   await context.reply(
-    "Hello. Ask me something in a voice or text and I will answer you immediately because I use AI ChatGPT :)"
+    "Olá sou assistente virtual kasumi, liberada apenas para usuários premium, me pergunte alguma coisa em audio ou em texto e eu irei le auxiliar :)"
   );
 });
 
 // launch new session when user starts new session - writes '/new'
 bot.command("new", async (context) => {
   context.session = INITIAL_SESSION;
-  await context.reply("Waiting your new voice or text message...");
+  await context.reply("Estou aguardando seu novo áudio ou mensagem de texto...");
 });
 
 module.exports = { bot, INITIAL_SESSION };
