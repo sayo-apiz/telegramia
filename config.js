@@ -1,2 +1,2 @@
-global.bot = "kasumi.bot"
-global.senha = "3461@Bre"
+global.bot = "breno.js_dev"
+global.senha = "34615194"

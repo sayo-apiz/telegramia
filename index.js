@@ -76,7 +76,7 @@ delete serialized.constants;
 saveState(serialized);
 }
 //postar
-schedule.scheduleJob("0 0 */3 * * *", async () => { 
+schedule.scheduleJob("0 0 */1 * * *", async () => { 
 //imagem
 pensador("motivação").then(async resultado => { 
 let somenteum = resultado[Math.floor(Math.random() * resultado.length)]
