@@ -5,6 +5,6 @@ do
 echo "$ {
 	GREEN
 } iniciando..."
-node ./scr/app.js
+node index.js
 sleep 1
 done
