@@ -1,2 +1,2 @@
-global.bot = "breno.js_dev"
-global.senha = "34615194"
+global.bot = "_breno.pv_"
+global.senha = "3461@b"
